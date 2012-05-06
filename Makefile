@@ -1,4 +1,5 @@
-CFLAGS   := $(shell luvit --cflags | sed s/-Werror//)
+LUVIT = luvit
+CFLAGS   := $(shell $(LUVIT) --cflags | sed s/-Werror//)
 
 all: build/hybi10.luvit
 
